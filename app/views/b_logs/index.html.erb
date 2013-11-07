@@ -1,0 +1,23 @@
+<h1>Listing b_logs</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @b_logs.each do |b_log| %>
+  <tr>
+    <td><%= b_log.title %></td>
+    <td><%= link_to 'Show', b_log %></td>
+    <td><%= link_to 'Edit', edit_b_log_path(b_log) %></td>
+    <td><%= link_to 'Destroy', b_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New B log', new_b_log_path %>

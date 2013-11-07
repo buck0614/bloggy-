@@ -1,0 +1,18 @@
+<h1>Hello World<h1>
+<h3> This is my blog!<h3>
+<button class="btn btn-large btn-info"> "Sign-up!"</button>
+
+<div style="Margin:50px;padding;30px;background-color:beige">
+	<h2> Forbiddden Words </h2>
+	<% @words.eeach do |word| %></br>
+		<%if  word =="stuff" %>
+	 Yeahh!!<br>
+	word:<%= word %><br/>
+	<%end%>
+</div>
+
+<div>
+	My name1:<%=@my_name %>
+	<br/>
+	My name2:<%= @my_name %>
+</div>
