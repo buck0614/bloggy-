@@ -11,11 +11,11 @@ resources :b_logs
 
   # about-us in Main
   get "main/about-us"=> "main#about_us", :as => :about_us
-  get "main/home"=>"main#home" :as => :home 
-  get "main/privacy"=> "main#privacy" :as => :privacy
-  get "main/contact_us"=> "main#contact_us" :as => :contact_us
+  get "main/home"=>"main#home", :as => :home 
+  get "main/privacy"=> "main#privacy", :as => :privacy
+  get "main/contact_us"=> "main#contact_us", :as => :contact_us
   get "main/tos"=> "main#_tos"
-  get "our-team"=>"main#our_team"
+  get "our-team"=>"main#our_team",  :as => :our_team
   get "main/vision"=>"main#vision"
   get "main/b_log"=>"main#b_log"
   # contact-us in Main
